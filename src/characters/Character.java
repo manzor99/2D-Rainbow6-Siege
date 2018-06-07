@@ -1,3 +1,7 @@
+package characters;
+
+import guns.Gun;
+
 public abstract class Character{
   int health, speed, armor, ammo, width, height; //ammo not in mag
   Gun gun;

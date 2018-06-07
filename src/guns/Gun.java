@@ -1,11 +1,15 @@
+package guns;
+
 import java.util.ArrayList;
 
-public abstract Gun{
+import attachments.Attachment;
+
+public abstract class Gun{
   int damage, fireRate, magSize, bulletsInMag;
   ArrayList<Attachment> attachments;
 
   public Gun(int damage, int fireRate, int magSize, int bulletsInMag, ArrayList<Attachment> attachments){
-    this.damage = damamge;
+    this.damage = damage;
     this.fireRate = fireRate;
     this.bulletsInMag = bulletsInMag;
     this.attachments = attachments;
