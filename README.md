@@ -2,11 +2,16 @@
 A 2D version of Tom Clancy's Rainbow 6 Siege
 
 ### TODO
+####Core Mechanics
 - [ ] something
 - [ ] something
+####Early Project Additions
 - [ ] something
 - [ ] something
+####Mid Project Additions
 - [ ] something
+- [ ] something
+####Late Project Additions
 - [ ] something
 - [ ] something
 
