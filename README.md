@@ -14,4 +14,4 @@ A 2D version of Tom Clancy's Rainbow 6 Siege
 #### Rocco
 - [ ] Make the frame, get characters on it, and allow them to move.
 #### Ryan
-- [ ] Make guns.
+- [ ] Make guns and characters.
