@@ -3,17 +3,42 @@ A 2D version of Tom Clancy's Rainbow 6 Siege
 
 ### TODO
 #### Core Mechanics
-- [X] something
-- [ ] something
+- [ ] Support for multiple players
+- [ ] Game Ticks
+- [ ] Damage
+- [ ] Fire Rate
+- [ ] Operators
+- [ ] Health
+- [ ] Movement
+- [ ] Condition (alive/dead)
 #### Early Project Additions
-- [X] something
-- [ ] something
+- [ ] Round Timer
+- [ ] Objectives
+- [ ] Mag size
+- [ ] Suicide bomber (chill NSA it's a game)
+- [ ] Ammo
+- [ ] Sprinting
+- [ ] Armor
 #### Mid Project Additions
-- [X] something
-- [ ] something
+- [ ] Operator Selection
+- [ ] Loudout Selection
+- [ ] Gun types (shotgun/heavy/etc)
+- [ ] Fire type (full auto/burst/etc)
+- [ ] Healing
+- [ ] Temporary Boosts
+- [ ] Ally Healthbar
+- [ ] Grenades/Projectiles
+- [ ] Gadgets (flash bang/barbed wire/etc)
 #### Late Project Additions
-- [X] something
-- [ ] something
+- [ ] Fog of war
+- [ ] Operator Abilities
+- [ ] DBNO/Revival
+- [ ] Windows
+- [ ] Destruction
+- [ ] Reinforcement
+- [ ] Barricades
+- [ ] Multiple Floors
+- [ ] Cameras
 
 ### Next Objective
 #### Rocco
