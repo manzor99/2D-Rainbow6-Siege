@@ -39,6 +39,8 @@ A 2D version of Tom Clancy's Rainbow 6 Siege
 - [ ] Barricades
 - [ ] Multiple Floors
 - [ ] Cameras
+- [ ] Multiplayer
+- [ ] Accounts
 
 ### Next Objective
 #### Rocco
