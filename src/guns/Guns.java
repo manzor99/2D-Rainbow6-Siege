@@ -2,7 +2,8 @@
 
 public abstract class Guns 
 {
-	int RPM, magSize, bulletsInMag;
+	int RPM, bulletsInMag;
+	final int magSize;
 	
 	public abstract void fire(); //Fires weapon
 	
