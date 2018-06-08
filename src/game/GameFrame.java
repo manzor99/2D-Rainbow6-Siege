@@ -1,21 +1,24 @@
 package game;
 
-import javax.swing.JFrame;
 import java.awt.Canvas;
 import java.awt.Color;
 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 public class GameFrame extends JFrame{
-	Canvas canvas;
+	JPanel panel;
 	public GameFrame(int width, int height) {
 		super();
-		
-		canvas = new Canvas();
-		canvas.setSize(width, height);
-		canvas.setBackground(Color.BLUE);
+		this.setLayout(null);
+		panel = new JPanel();
+		panel.setSize(width, height);
+		panel.setLayout(null);
+		//panel.setBackground(Color.BLUE);
 		
 		this.setSize(width, height);
 		this.setResizable(false);
-		this.add(canvas);
+		this.add(panel);
 		this.setTitle("2D-Rainbow6-Siege");
 		this.setVisible(true);
 	}
