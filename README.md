@@ -45,7 +45,8 @@ A 2D version of Tom Clancy's Rainbow 6 Siege
 
 ### Next Objective
 #### Rocco
-- [ ] Make the frame, get characters on it, and allow them to move.
+- [X] Make the frame, get characters on it, and allow them to move.
+- [ ] Make everything server side and allow the server and client to communicate.
 #### Ryan
 - [ ] Make characters.
 #### Larry
@@ -53,7 +54,7 @@ A 2D version of Tom Clancy's Rainbow 6 Siege
 #### Nick
 - [ ] Sledge
 - [ ] Thatcher
-- [ ] Smoke
+- [X] Smoke
 - [ ] Mute
 - [X] Ash
 - [ ] Thermite
