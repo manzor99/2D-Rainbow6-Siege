@@ -10,6 +10,7 @@ A 2D version of Tom Clancy's Rainbow 6 Siege
 - [ ] Operators
 - [ ] Health
 - [ ] Movement
+- [ ] Animations
 - [ ] Condition (alive/dead)
 #### Early Project Additions
 - [ ] Round Timer
