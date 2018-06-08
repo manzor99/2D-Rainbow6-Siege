@@ -46,4 +46,45 @@ A 2D version of Tom Clancy's Rainbow 6 Siege
 #### Rocco
 - [ ] Make the frame, get characters on it, and allow them to move.
 #### Ryan
-- [ ] Make guns and characters.
+- [ ] Make characters.
+#### Larry
+- [ ] Make guns
+#### Nick
+- [ ] Sledge
+- [ ] Thatcher
+- [ ] Smoke
+- [ ] Mute
+- [X] Ash
+- [ ] Thermite
+- [ ] Castle
+- [ ] Pulse
+- [ ] Twitch
+- [ ] Montangne
+- [ ] Doc
+- [ ] Rook
+- [ ] Glaz
+- [ ] Fuze
+- [ ] Kapkan
+- [X] Tachanka
+- [ ] Blitz
+- [ ] IQ
+- [ ] Jager
+- [ ] Bandit
+- [ ] Buck
+- [ ] Frost
+- [ ] Blackbeard
+- [ ] Valkyrie
+- [ ] Capitao
+- [ ] Caveira
+- [ ] Hibana
+- [ ] Echo
+- [ ] Jachal
+- [ ] Mira
+- [ ] Ying
+- [ ] Lesion
+- [ ] Zofia
+- [ ] Ela
+- [ ] Dokkaebi
+- [ ] Vigil
+- [ ] Lion
+- [ ] Finka
