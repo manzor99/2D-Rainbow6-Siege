@@ -24,6 +24,7 @@ public class Game{
 		
 		public void actionPerformed(ActionEvent e) {
 			//this is what happens when there is a tick
+			
 		}
 		
 	}
