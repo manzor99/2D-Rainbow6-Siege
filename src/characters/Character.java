@@ -27,6 +27,18 @@ public abstract class Character extends Rectangle{
     this.label.setVisible(true);
   }
   
+  public Character() {
+	  health = 100;
+	  width = 32;
+	  height = 32;
+	  x = 100;
+	  y = 100;
+	  this.label = new JLabel();
+	  this.label.setSize(width, height);
+	  this.label.setLocation(this.x, this.y);
+	  this.label.setVisible(true);
+  }
+  
   @Override
   public void setLocation(int x, int y) {
 	  this.x = x;
