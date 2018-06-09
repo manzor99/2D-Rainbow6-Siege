@@ -1,19 +1,25 @@
 package game;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+import javax.swing.Timer;
 import javax.swing.WindowConstants;
 
 import characters.Character;
+import characters.Direction;
 import characters.Tachanka;
 
 public class Client {
 
 	GameFrame frame; //add the timer and key listener to the frame
 	Character player;
+	Game game;
 	
-	public Client(GameFrame frame, Character player) {
+	public Client(GameFrame frame, Game game, Character player) {
+		this.game = game;
 		this.frame = frame;
 		this.frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		this.player = player;
@@ -33,16 +39,27 @@ public class Client {
 		@Override
 		public void keyPressed(KeyEvent key) { //if a key is held down
 			if(key.getKeyCode() == KeyEvent.VK_W) {
-				player.setLocation(player.x, player.y - player.speed);
-			}
-			else if(key.getKeyCode() == KeyEvent.VK_A) {
-				player.setLocation(player.x- player.speed, player.y);
-			}
-			else if(key.getKeyCode() == KeyEvent.VK_S) {
-				player.setLocation(player.x, player.y + player.speed);
-			}
-			else if(key.getKeyCode() == KeyEvent.VK_D) {
-				player.setLocation(player.x + player.speed, player.y);
+				game.moveCharacter(player, Direction.UP);
+			} else if(key.getKeyCode() == KeyEvent.VK_A) {
+				game.moveCharacter(player, Direction.LEFT);
+			} else if(key.getKeyCode() == KeyEvent.VK_S) {
+				game.moveCharacter(player, Direction.DOWN);
+			} else if(key.getKeyCode() == KeyEvent.VK_D) {
+				game.moveCharacter(player, Direction.RIGHT);
+			} else if(key.getKeyCode() == KeyEvent.VK_R) { 
+				//reload
+			} else if(key.getKeyCode() == KeyEvent.VK_D) {
+				game.moveCharacter(player, Direction.RIGHT);
+			} else if(key.getKeyCode() == KeyEvent.VK_E) {
+				//shoot
+			}  else if(key.getKeyCode() == KeyEvent.VK_SPACE) {
+				//vault
+			} else if(key.getKeyCode() == KeyEvent.VK_G) {
+				//gadget 1
+			} else if(key.getKeyCode() == KeyEvent.VK_F) {
+				//gadget 2
+			} else if(key.getKeyCode() == KeyEvent.VK_C) {
+				//operator ability
 			}
 		}
 
@@ -61,8 +78,10 @@ public class Client {
 	}
 	
 	public static void main(String[] args) {
+		Game game = new Game();
 		Tachanka t = new Tachanka(100, 3, 3, 32, 32, 200, 200, 30, null);
-		Client c = new Client(new GameFrame(900, 600), t);
+		game.one.players.add(t);
+		Client c = new Client(new GameFrame(900, 600), game, t);
 	}
 	
 }

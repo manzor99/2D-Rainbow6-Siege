@@ -2,16 +2,17 @@ package game;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.Timer;
-
+import characters.Direction;
+import characters.Character;
 public class Game{
 	boolean teamOneOnOffense; //is team 1 on offense?
-	Team one; 
-	Team two;
+	public Team one; 
+	public Team two;
 	
 	public Game() {
-		
+		one = new Team();
+		two = new Team();
 	}
 	
 
@@ -40,6 +41,28 @@ public class Game{
 	 * */
 	private boolean gameOver() {
 		return false;
+	}
+	
+	/*
+	 * moves the character in the given direction
+	 * @param the character to be moved
+	 * @param the direction to move the character
+	 * */
+	public void moveCharacter(Character c, Direction d) {
+		switch(d) {
+		case LEFT:
+			c.setLocation(c.x - c.speed, c.y);
+			break;
+		case DOWN:
+			c.setLocation(c.x, c.y + c.speed);
+			break;
+		case RIGHT:
+			c.setLocation(c.x + c.speed, c.y);
+			break;
+		default:
+			c.setLocation(c.x, c.y - c.speed);
+			break;
+		}
 	}
 	
 }
