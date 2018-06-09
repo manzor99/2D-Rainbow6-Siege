@@ -40,15 +40,26 @@ public class Client {
 		public void keyPressed(KeyEvent key) { //if a key is held down
 			if(key.getKeyCode() == KeyEvent.VK_W) {
 				game.moveCharacter(player, Direction.UP);
-			}
-			else if(key.getKeyCode() == KeyEvent.VK_A) {
+			} else if(key.getKeyCode() == KeyEvent.VK_A) {
 				game.moveCharacter(player, Direction.LEFT);
-			}
-			else if(key.getKeyCode() == KeyEvent.VK_S) {
+			} else if(key.getKeyCode() == KeyEvent.VK_S) {
 				game.moveCharacter(player, Direction.DOWN);
-			}
-			else if(key.getKeyCode() == KeyEvent.VK_D) {
+			} else if(key.getKeyCode() == KeyEvent.VK_D) {
 				game.moveCharacter(player, Direction.RIGHT);
+			} else if(key.getKeyCode() == KeyEvent.VK_R) { 
+				//reload
+			} else if(key.getKeyCode() == KeyEvent.VK_D) {
+				game.moveCharacter(player, Direction.RIGHT);
+			} else if(key.getKeyCode() == KeyEvent.VK_E) {
+				//shoot
+			}  else if(key.getKeyCode() == KeyEvent.VK_SPACE) {
+				//vault
+			} else if(key.getKeyCode() == KeyEvent.VK_G) {
+				//gadget 1
+			} else if(key.getKeyCode() == KeyEvent.VK_F) {
+				//gadget 2
+			} else if(key.getKeyCode() == KeyEvent.VK_C) {
+				//operator ability
 			}
 		}
 
@@ -65,7 +76,6 @@ public class Client {
 		}
 		
 	}
-	
 	
 	public static void main(String[] args) {
 		Game game = new Game();
