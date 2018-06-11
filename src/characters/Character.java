@@ -26,12 +26,27 @@ public abstract class Character extends Rectangle{
     this.label.setLocation(this.x, this.y);
     this.label.setVisible(true);
   }
-  
-  @Override
-  public void setLocation(int x, int y) {
-	  this.x = x;
-	  this.y = y;
-	  this.label.setLocation(x, y);
+
+  /*
+   * move the character in a direction
+   * @param the direction the character moves in
+   * */
+  public void move(Direction d) {
+	  switch(d) {
+	  	case UP:
+	  		y -= speed;
+	  		break;
+	  	case DOWN:
+	  		y += speed;
+	  		break;
+	  	case LEFT:
+	  		x -= speed;
+	  		break;
+	  	case RIGHT:
+	  		x += speed;
+	  		break;
+	  }
+	  label.setLocation(x, y);
   }
   
 }

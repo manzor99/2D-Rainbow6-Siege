@@ -51,16 +51,16 @@ public class Game{
 	public void moveCharacter(Character c, Direction d) {
 		switch(d) {
 		case LEFT:
-			c.setLocation(c.x - c.speed, c.y);
+			c.move(Direction.LEFT);
 			break;
 		case DOWN:
-			c.setLocation(c.x, c.y + c.speed);
+			c.move(Direction.DOWN);
 			break;
 		case RIGHT:
-			c.setLocation(c.x + c.speed, c.y);
+			c.move(Direction.RIGHT);
 			break;
-		default:
-			c.setLocation(c.x, c.y - c.speed);
+		case UP:
+			c.move(Direction.UP);
 			break;
 		}
 	}
