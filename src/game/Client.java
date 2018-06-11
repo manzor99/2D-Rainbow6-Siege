@@ -6,6 +6,7 @@ import java.awt.event.KeyListener;
 import javax.swing.WindowConstants;
 
 import characters.Character;
+import characters.Direction;
 import characters.Tachanka;
 
 public class Client {
@@ -33,16 +34,16 @@ public class Client {
 		@Override
 		public void keyPressed(KeyEvent key) { //if a key is held down
 			if(key.getKeyCode() == KeyEvent.VK_W) {
-				player.setLocation(player.x, player.y - player.speed);
+				player.move(Direction.UP);
 			}
 			else if(key.getKeyCode() == KeyEvent.VK_A) {
-				player.setLocation(player.x- player.speed, player.y);
+				player.move(Direction.LEFT);
 			}
 			else if(key.getKeyCode() == KeyEvent.VK_S) {
-				player.setLocation(player.x, player.y + player.speed);
+				player.move(Direction.DOWN);
 			}
 			else if(key.getKeyCode() == KeyEvent.VK_D) {
-				player.setLocation(player.x + player.speed, player.y);
+				player.move(Direction.RIGHT);
 			}
 		}
 
