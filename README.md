@@ -47,12 +47,13 @@ A 2D version of Tom Clancy's Rainbow 6 Siege
 #### Rocco
 - [X] Make the frame, get characters on it, and allow them to move.
 - [X] Make everything server side and allow the server and client to communicate.
+- [ ] Make walls and implement collisions.
 #### Ryan
 - [ ] Make characters.
 #### Larry
 - [ ] Make guns
 #### Nick
-- [ ] Sledge
+- [X] Sledge
 - [ ] Thatcher
 - [X] Smoke
 - [ ] Mute
