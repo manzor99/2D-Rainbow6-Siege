@@ -70,6 +70,7 @@ public class Client {
 		public void keyTyped(KeyEvent key) { //when a key is typed aka only occurs once even if you hold the key down
 			// TODO Auto-generated method stub
 			
+			
 		}
 		
 	}
