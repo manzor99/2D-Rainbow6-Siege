@@ -1,4 +1,4 @@
-package maps;
+package terrain;
 
 import java.awt.Dimension;
 
@@ -17,6 +17,12 @@ public class Wall extends Terrain{
 		this.y = y;
 		this.label = new JLabel();
 		this.label.setSize(new Dimension(width, height));
+		this.label.setLocation(this.x, this.y);
+		
+		//TODO: Remove next line
+		this.label.setText("build a wall");
+		this.setBounds(x, y, width, height);
+		this.label.setVisible(true);
 	}
 	
 }

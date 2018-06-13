@@ -7,11 +7,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class GameFrame extends JFrame{
-	JPanel panel;
+	GamePanel panel;
 	public GameFrame(int width, int height) {
 		super();
 		this.setLayout(null);
-		panel = new JPanel();
+		panel = new GamePanel();
 		panel.setSize(width, height);
 		panel.setLayout(null);
 		//panel.setBackground(Color.BLUE);
