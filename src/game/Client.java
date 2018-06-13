@@ -76,7 +76,7 @@ public class Client {
 	
 	public static void main(String[] args) {
 		Game game = new Game();
-		Tachanka t = new Tachanka(100, 3, 3, 32, 32, 200, 200, 30, null);
+		Tachanka t = new Tachanka(100, 3, 3, 32, 32, 200, 300, 30, null);
 		game.one.players.add(t);
 		Client c = new Client(new GameFrame(900, 600), game, t);
 		//c.frame.panel.

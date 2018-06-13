@@ -7,8 +7,14 @@ import terrain.Wall;
 import terrain.Window;
 
 public class Map extends Canvas{
-  int width, height;
-  ArrayList<Wall> walls;
-  ArrayList<Window> windows;
-  ArrayList<Stairs> stairs;
+  public int width, height;
+  public ArrayList<Wall> walls;
+  public ArrayList<Window> windows;
+  public ArrayList<Stairs> stairs;
+  
+  public Map() {
+	  walls = new ArrayList<>();
+	  windows = new ArrayList<>();
+	  stairs = new ArrayList<>();
+  }
 }
