@@ -7,6 +7,7 @@ import javax.swing.Timer;
 
 import characters.Character;
 import characters.Direction;
+import maps.LoadMap;
 import maps.Map;
 import terrain.Wall;
 import terrain.Window;
@@ -20,7 +21,7 @@ public class Game{
 		one = new Team();
 		two = new Team();
 		map = new Map();
-		map.walls.add(new Wall(1000, 10, 100, 200));
+		LoadMap.testMa(map);
 	}
 	
 
@@ -78,6 +79,7 @@ public class Game{
 			}
 			break;
 		}
+		System.out.format("(%d,%d)", c.x, c.y);
 	}
 	/*
 	 * returns true if a given character collides with anything other than stairs
